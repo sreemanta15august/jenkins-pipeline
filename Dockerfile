@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:18.04
 RUN apt-get update -y
 RUN apt-get install -y apache2 
 COPY index.html /var/www/html/
