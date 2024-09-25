@@ -10,7 +10,7 @@ pipeline {
                      }
                stage('create container') {
                         steps {
-                                sh 'docker run -dit --name kyndryl pipeimage'
+                                sh 'docker run -dit --name -p 3000:80 kyndryl pipeimage'
                         }
                 
                      }
