@@ -10,7 +10,7 @@ pipeline {
                      }
                stage('create container') {
                         steps {
-                                sh 'docker run -dit --name mudassir -p 3000:80 pipeimage'
+                                sh 'docker run -dit --name mudassir1 -p 4000:80 pipeimage'
                         }
                 
                      }
