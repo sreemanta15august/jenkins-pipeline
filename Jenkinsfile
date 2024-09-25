@@ -10,7 +10,7 @@ pipeline {
                      }
                stage('create container') {
                         steps {
-                                sh 'docker run -dit --name mudassir pipeimage'
+                                sh 'docker run -dit --name kyndryl pipeimage'
                         }
                 
                      }
