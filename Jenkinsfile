@@ -4,21 +4,21 @@ pipeline {
         stages {
                 stage('create image') {
                         steps {
-                                sh 'docker build -t msmengr/hello-world:v5 .'
+                                sh 'docker build -t sreemanta15august/test24:v5 .'
                         }
                 
                      }
 
                 stage('push image') {
                         steps {
-                                sh 'docker login -u sreemanta15august -p <ur password>'
-                                sh 'docker push msmengr/hello-world:v5 '
+                                sh 'docker login -u sreemanta15august -p Sree15@Pinki2'
+                                sh 'docker push sreemanta15august/test24:v5 '
                         }
                 
                      }
                stage('create container') {
                         steps {
-                                sh 'docker run -dit --name mudassir1 -p 4000:80 msmengr/hello-world:v5'
+                                sh 'docker run -dit --name cont1 -p 4000:80 sreemanta15august/test24:v5'
                         }
                 
                      }
