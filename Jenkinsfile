@@ -18,7 +18,7 @@ pipeline {
                      }
                stage('create container') {
                         steps {
-                                sh 'docker run -dit --name cont1 -p 7000:80 sreemanta15august/test24:v5'
+                                sh 'docker run -dit --name cont2 -p 7000:80 sreemanta15august/test24:v5'
                         }
                 
                      }
